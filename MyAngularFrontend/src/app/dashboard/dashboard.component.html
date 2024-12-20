@@ -1,0 +1,8 @@
+<div class="dashboard">
+    <h1>Dashboard</h1>
+    <button (click)="loadData()">Load Data</button>
+    <ul *ngIf="data.length > 0">
+      <li *ngFor="let item of data">{{ item }}</li>
+    </ul>
+  </div>
+  
